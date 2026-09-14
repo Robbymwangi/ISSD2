@@ -1,6 +1,6 @@
 ﻿{
     "summary":  {
-                    "title":  "Student Results Portal - Threat Model",
+                    "title":  "Student Results Portal Threat Model",
                     "description":  "ICS4203 Threat Modelling Lab - University Student Results Portal. Baseline architecture plus the remote-learning extension scenario, with STRIDE threats mapped from the group\u0027s completed STRIDE table.",
                     "owner":  "Robby (System Architecture \u0026 DFD)",
                     "id":  0
