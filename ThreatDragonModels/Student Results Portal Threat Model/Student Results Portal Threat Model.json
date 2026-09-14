@@ -1,14 +1,14 @@
 ﻿{
     "summary":  {
                     "title":  "Student Results Portal Threat Model",
-                    "description":  "ICS4203 Threat Modelling Lab - University Student Results Portal. Baseline architecture plus the remote-learning extension scenario, with STRIDE threats mapped from the group\u0027s completed STRIDE table.",
-                    "owner":  "Robby (System Architecture \u0026 DFD)",
+                    "description":  "ICS4203 Threat Modelling Lab - University Student Results Portal. Baseline architecture plus the remote-learning extension scenario, with STRIDE threats mapped from the group's completed STRIDE table.",
+                    "owner":  "Robby (System Architecture & DFD)",
                     "id":  0
                 },
     "detail":  {
                    "threatTop":  0,
                    "reviewer":  "",
-                   "diagramTop":  null,
+                   "diagramTop":  2,
                    "contributors":  [
                                         {
                                             "name":  "Robby"
@@ -73,7 +73,7 @@
                                                                                            "mitigation":  "MFA, strong password policy, suspicious login detection.",
                                                                                            "title":  "Stolen student credentials",
                                                                                            "type":  "Spoofing",
-                                                                                           "description":  "Attacker steals a student\u0027s login details and impersonates them to view results/transcripts.",
+                                                                                           "description":  "Attacker steals a student's login details and impersonates them to view results/transcripts.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "High",
                                                                                            "modelType":  "STRIDE"
@@ -83,19 +83,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "b2b37859-4d7a-4308-baf7-fb3a549dd01a",
+                                                                                          "id":  "39c0bd7b-34a2-479d-a783-8c2032a43bdd",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "2b5f888b-2e7f-435e-bf7e-da7d5366f55e",
+                                                                                          "id":  "8863e170-ae81-45e4-a5b6-a80931f93251",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "d1ba9bf9-ed5b-4f18-a792-7a30f1a0ef0d",
+                                                                                          "id":  "6a656ae2-9c65-4304-b699-c4ab25f572db",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "c05dae32-f7d0-41cc-8d2c-4cbe0e3826b4",
+                                                                                          "id":  "be5b06f0-fbfe-4b33-9b4c-df8b39b1266f",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -201,7 +201,7 @@
                                                                                            "mitigation":  "MFA, session management and login auditing.",
                                                                                            "title":  "Stolen lecturer credentials",
                                                                                            "type":  "Spoofing",
-                                                                                           "description":  "Attacker obtains a lecturer\u0027s credentials by theft and logs in under the disguise of being a lecturer.",
+                                                                                           "description":  "Attacker obtains a lecturer's credentials by theft and logs in under the disguise of being a lecturer.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "High",
                                                                                            "modelType":  "STRIDE"
@@ -211,19 +211,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "fb97dd72-693f-4325-9ec1-fa2059289b7f",
+                                                                                          "id":  "6c8592fe-68bd-4a39-beea-a5a30e24d8db",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "4993eb6f-684f-47bb-8337-36202bd64e3d",
+                                                                                          "id":  "9189bb01-081c-4b1c-b9c4-a2f61ee04470",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "534a9f3d-ed9d-4bc9-989f-4f13b11f3dd9",
+                                                                                          "id":  "17053228-65e0-409a-81ff-5cad21a1c706",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "f01a24da-dd2a-436f-81b2-e8651e5e2cfe",
+                                                                                          "id":  "4df66e7e-1ace-45bf-a4df-7117c3de62a9",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -330,19 +330,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "d781cc7b-de96-473c-97b6-88f194d4b90c",
+                                                                                          "id":  "1cb445e3-4d8d-4848-ae3e-e7992a61d97d",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "f78ecb6a-2332-4d44-b0b9-e199be88bb4a",
+                                                                                          "id":  "938fe3e1-6d4f-4225-80f5-ce35f2008126",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "9d8b2d7b-81b6-409d-9cb9-f329024fd83b",
+                                                                                          "id":  "0713cd82-b412-4e4a-99fe-0a397221bb23",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "87438754-e6c7-4a98-86fa-dfa10c4022d4",
+                                                                                          "id":  "ed9db9ec-4c21-47d5-a84f-15cd7caa155a",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -457,19 +457,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "130fe776-1523-4130-8d4c-abd1aaf463a6",
+                                                                                          "id":  "909d5168-655c-4af1-a4b3-83c310013da5",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "b0dfc3da-39b1-4494-864f-468f75bec595",
+                                                                                          "id":  "06522733-eb9a-4091-a101-46490a84db9e",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "211bea2c-ef27-4623-a8bb-e124d2a4e1c3",
+                                                                                          "id":  "571ad8a6-a004-4607-9d93-d251f8c50553",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "b3325435-54e2-43a9-8bd9-e50e85336122",
+                                                                                          "id":  "0c5775e4-535b-4dc8-8425-fb60955bb99b",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -575,19 +575,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "b07c0287-1731-45c4-8bb9-1bd2e71b8c79",
+                                                                                          "id":  "be6d65e2-f82a-4b8a-8381-16286170fbc0",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "1b335aa2-301f-41a5-8a9d-c13d416248ad",
+                                                                                          "id":  "9d8f8bad-aa23-4085-8d01-cecce415bc84",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "e522c869-ead4-4ae4-96ba-ca5d931d0848",
+                                                                                          "id":  "7abe4294-0a7c-4d1c-863a-e78ebd341d67",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "e733bd08-d81f-4b66-beb0-3fe0dc69ff84",
+                                                                                          "id":  "f4c62d0a-524d-46c0-8676-0c7f4d894c22",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -702,19 +702,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "aba9f2cd-e2d8-46a9-b71d-550492982557",
+                                                                                          "id":  "109ce2df-89ca-4e1a-acd2-72957f83abd6",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "1e166ae9-d3b9-49e5-8d83-6c087c44fda6",
+                                                                                          "id":  "4beaa672-9015-48f8-b4b9-70aa22855b0b",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "1897db0f-6632-4965-8d9e-f23f0c6dd4a9",
+                                                                                          "id":  "8c31f393-e627-42c2-be53-8d8752c07f26",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "0607b4ac-bf68-48f2-8027-aba97661ab83",
+                                                                                          "id":  "5345631c-6a5a-4b6f-a9d8-ac730d53356d",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -829,19 +829,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "955c149d-b44f-45bb-bc6c-d92d875b2147",
+                                                                                          "id":  "d84168ef-eaac-4be7-80ad-93312a070173",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "6d0fec6d-faa9-40de-bc1b-cdff8f376fa3",
+                                                                                          "id":  "9c229df2-d08f-4e73-81a3-119be914996c",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "6476e6e8-6ec4-42cc-b61f-c73bd95c9233",
+                                                                                          "id":  "6f7c9195-ae76-4141-aa7c-8f6a30482449",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "c97794fc-00f8-4914-bbf2-eb73dbfb7fd3",
+                                                                                          "id":  "4335042d-b64c-4f27-b6ad-dd59b28b1cab",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -975,19 +975,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "2b421352-57ab-4ba9-a09f-a43361eafce5",
+                                                                                          "id":  "4a651984-cccb-4ff2-849b-8be0c45bb567",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "fcd839e6-45a7-41ca-815b-2e3f34241e0b",
+                                                                                          "id":  "6a045e5b-0692-4bb4-95fb-307b75e23797",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "38ba7e9e-681b-4b45-94d9-dc52eb18e886",
+                                                                                          "id":  "284d7dfd-85a0-4ef5-bc5f-7849e600ef62",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "0df11311-6ed0-4317-bffc-7a7f2d1ddf23",
+                                                                                          "id":  "6a711868-5da3-4315-8941-2ae77099fc80",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -1111,19 +1111,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "62685fd8-aa29-40f7-a0bd-face7e1c3420",
+                                                                                          "id":  "f7bcf485-ca30-46c7-9277-3154058acf98",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "d7fd8733-8a82-481a-a592-747c7c260e09",
+                                                                                          "id":  "370e04d7-0ba3-4ccb-a872-05b63d81a752",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "776946c2-cd69-4202-a3bb-15e8fceb8963",
+                                                                                          "id":  "6161743b-5e0f-48a1-90c4-8b343a82b284",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "d45b8571-6a83-49c5-b58d-8fc1255770e9",
+                                                                                          "id":  "8fa69984-980f-498b-beb1-1fddec817c7a",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -1219,9 +1219,9 @@
                                                                          "y":  460,
                                                                          "x":  220
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  10,
                                                           "labels":  [
                                                                          {
@@ -1289,9 +1289,9 @@
                                                                          "y":  200,
                                                                          "x":  470
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  11,
                                                           "labels":  [
                                                                          {
@@ -1359,9 +1359,9 @@
                                                                          "y":  460,
                                                                          "x":  470
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  12,
                                                           "labels":  [
                                                                          {
@@ -1429,9 +1429,9 @@
                                                                          "y":  200,
                                                                          "x":  680
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  13,
                                                           "labels":  [
                                                                          {
@@ -1499,9 +1499,9 @@
                                                                          "y":  500,
                                                                          "x":  680
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  14,
                                                           "labels":  [
                                                                          {
@@ -1569,9 +1569,9 @@
                                                                          "y":  460,
                                                                          "x":  720
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  15,
                                                           "labels":  [
                                                                          {
@@ -1659,9 +1659,9 @@
                                                           "target":  {
                                                                          "cell":  "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  16,
                                                           "labels":  [
                                                                          {
@@ -1711,7 +1711,7 @@
                                                                                            "mitigation":  "RBAC, encryption in transit and at rest, server-side access checks.",
                                                                                            "title":  "Unauthorized transcript access",
                                                                                            "type":  "Information disclosure",
-                                                                                           "description":  "Attacker accesses another student\u0027s results/transcript in an unauthorized manner.",
+                                                                                           "description":  "Attacker accesses another student's results/transcript in an unauthorized manner.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "High",
                                                                                            "modelType":  "STRIDE"
@@ -1740,9 +1740,9 @@
                                                           "target":  {
                                                                          "cell":  "505ceec0-5aa1-40e4-b0ea-0eddc920701b"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  17,
                                                           "labels":  [
                                                                          {
@@ -1812,9 +1812,9 @@
                                                           "target":  {
                                                                          "cell":  "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  18,
                                                           "labels":  [
                                                                          {
@@ -1884,9 +1884,9 @@
                                                           "target":  {
                                                                          "cell":  "677180d9-de86-4814-91f5-2d77c5faebf3"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  19,
                                                           "labels":  [
                                                                          {
@@ -1956,9 +1956,9 @@
                                                           "target":  {
                                                                          "cell":  "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  20,
                                                           "labels":  [
                                                                          {
@@ -2028,9 +2028,9 @@
                                                           "target":  {
                                                                          "cell":  "ed5c5934-3826-451b-bf58-7967968c8b12"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  21,
                                                           "labels":  [
                                                                          {
@@ -2100,9 +2100,9 @@
                                                           "target":  {
                                                                          "cell":  "b63f6d39-32c7-4a87-b78f-7669caa831da"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  22,
                                                           "labels":  [
                                                                          {
@@ -2172,9 +2172,9 @@
                                                           "target":  {
                                                                          "cell":  "ed5c5934-3826-451b-bf58-7967968c8b12"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  23,
                                                           "labels":  [
                                                                          {
@@ -2253,9 +2253,9 @@
                                                           "target":  {
                                                                          "cell":  "61a850c7-2963-4c5a-8769-cbc69e3a315c"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  24,
                                                           "labels":  [
                                                                          {
@@ -2325,9 +2325,9 @@
                                                           "target":  {
                                                                          "cell":  "3c24f416-513e-453d-8e67-8e82ad95785a"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  25,
                                                           "labels":  [
                                                                          {
@@ -2397,9 +2397,9 @@
                                                           "target":  {
                                                                          "cell":  "ed5c5934-3826-451b-bf58-7967968c8b12"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  26,
                                                           "labels":  [
                                                                          {
@@ -2469,9 +2469,9 @@
                                                           "target":  {
                                                                          "cell":  "23f9962d-4720-4635-bbc3-321c3874b4a4"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  27,
                                                           "labels":  [
                                                                          {
@@ -2551,19 +2551,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "919e5c67-0a31-4095-88af-705adfdaa63e",
+                                                                                          "id":  "b84798eb-aacb-4c37-a979-f30ad06c9975",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "5ec63a2f-977f-4c89-baf8-b26e97e4ed5b",
+                                                                                          "id":  "af393853-45b9-4fcd-9543-8e1dae432c6e",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "e6b55c49-a390-4822-b867-fc098743c711",
+                                                                                          "id":  "e4b6bc06-0148-4abb-8497-bb7c94750d76",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "47c6d59f-6e3e-486c-938b-fcf289a0ffeb",
+                                                                                          "id":  "54abd93c-9d8b-4b35-aaab-8b6679a06fed",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -2670,19 +2670,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "194554e7-2e05-493d-9d1a-0ce273c53c90",
+                                                                                          "id":  "e7bfd3a2-8c41-445c-9c53-2bb1e1120152",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "b5dbb0af-9bfc-4579-8e49-84a0ca40da61",
+                                                                                          "id":  "6b91de4f-319c-4681-bb8a-d3f2dadb4c3f",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "05b79218-d932-4cf5-875f-cf618008c5ae",
+                                                                                          "id":  "6297a14a-87e6-4b3e-8815-b25a10884c4f",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "cf60a01b-65c1-4e79-921b-f4e26eb06ffa",
+                                                                                          "id":  "dd8d4285-e360-484a-99fd-974a16df029b",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -2788,19 +2788,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "59d81ba9-b487-4eb6-8d29-004c9198987b",
+                                                                                          "id":  "a6fa718d-e9bf-4035-b8a4-b6a8b95f1e51",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "b24705f7-aece-47e7-a44a-a7312a5441a7",
+                                                                                          "id":  "47fa6a68-6a84-4db2-93fe-244ceea33806",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "15e7bdf5-e952-46a7-80b4-a1e6107bac93",
+                                                                                          "id":  "ebbfd6da-43d3-4fb4-ad6b-79d1c7354cd7",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "b084b63b-28bb-4eda-9cd9-477f96ac6627",
+                                                                                          "id":  "78ba0c7c-5419-4f16-a042-4215d51af6d3",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -2906,19 +2906,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "fb476e74-2945-4ade-817a-f0f493d68e03",
+                                                                                          "id":  "e21a6403-672b-4635-9375-38270e278d95",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "db8a20a2-099e-4fef-b913-b79f4c182b8c",
+                                                                                          "id":  "fec73f7f-b24b-4ede-be3e-00b1e3ba454f",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "0c97cee8-ea75-47a0-ab56-f2989db2023a",
+                                                                                          "id":  "ed581cfb-19e1-45fd-a237-a9b761f200ec",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "47eb7c56-96b4-4867-a2fb-6f5fb025f9b0",
+                                                                                          "id":  "c5fb3c18-2f48-4d48-94eb-14e21e3e2c6e",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -3033,19 +3033,19 @@
                                                           "ports":  {
                                                                         "items":  [
                                                                                       {
-                                                                                          "id":  "c02ed847-aa6d-4b0e-8d24-d7b7a93406da",
+                                                                                          "id":  "ccf57e7e-fd85-404a-9c6b-616a9ed2830a",
                                                                                           "group":  "top"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "5861d4ba-a44b-4e6b-be39-089d6dda2c1e",
+                                                                                          "id":  "23eaabbe-9ed5-4415-940c-7ced9325a464",
                                                                                           "group":  "right"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "0c732332-180b-4128-adc1-dd4f9936c807",
+                                                                                          "id":  "8f9aec27-b5a8-4fe1-a40c-402168f4796e",
                                                                                           "group":  "bottom"
                                                                                       },
                                                                                       {
-                                                                                          "id":  "3f3ce72c-1c95-4434-a2f9-836a0356f977",
+                                                                                          "id":  "02dc98ba-8e97-4190-8d34-0f59fdfd14c5",
                                                                                           "group":  "left"
                                                                                       }
                                                                                   ],
@@ -3141,9 +3141,9 @@
                                                                          "y":  460,
                                                                          "x":  220
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  6,
                                                           "labels":  [
                                                                          {
@@ -3211,9 +3211,9 @@
                                                                          "y":  300,
                                                                          "x":  470
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  7,
                                                           "labels":  [
                                                                          {
@@ -3272,7 +3272,7 @@
                                                                                            "mitigation":  "Full-disk encryption, MDM, remote wipe, short-lived tokens.",
                                                                                            "title":  "Stolen laptop",
                                                                                            "type":  "Spoofing",
-                                                                                           "description":  "Lecturer\u0027s personal laptop is lost or stolen, exposing cached credentials/session tokens.",
+                                                                                           "description":  "Lecturer's personal laptop is lost or stolen, exposing cached credentials/session tokens.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "High",
                                                                                            "modelType":  "STRIDE"
@@ -3301,9 +3301,9 @@
                                                           "target":  {
                                                                          "cell":  "b96c2d16-0764-4b79-b045-c99226a68447"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  8,
                                                           "labels":  [
                                                                          {
@@ -3373,9 +3373,9 @@
                                                           "target":  {
                                                                          "cell":  "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  9,
                                                           "labels":  [
                                                                          {
@@ -3425,7 +3425,7 @@
                                                                                            "mitigation":  "Enforce TLS end-to-end, discourage public Wi-Fi, VPN/ZTNA for sensitive actions.",
                                                                                            "title":  "Insecure home network",
                                                                                            "type":  "Information disclosure",
-                                                                                           "description":  "Traffic from a student\u0027s home Wi-Fi/mobile network may traverse an untrusted or compromised network.",
+                                                                                           "description":  "Traffic from a student's home Wi-Fi/mobile network may traverse an untrusted or compromised network.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "Medium",
                                                                                            "modelType":  "STRIDE"
@@ -3454,9 +3454,9 @@
                                                           "target":  {
                                                                          "cell":  "b96c2d16-0764-4b79-b045-c99226a68447"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  10,
                                                           "labels":  [
                                                                          {
@@ -3526,9 +3526,9 @@
                                                           "target":  {
                                                                          "cell":  "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  11,
                                                           "labels":  [
                                                                          {
@@ -3598,9 +3598,9 @@
                                                           "target":  {
                                                                          "cell":  "657610d6-d470-41a7-aeb4-0cf04ca57125"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  12,
                                                           "labels":  [
                                                                          {
@@ -3670,9 +3670,9 @@
                                                           "target":  {
                                                                          "cell":  "40e25081-d7f3-4e11-9b61-5a8968c2a8ac"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  13,
                                                           "labels":  [
                                                                          {
@@ -3751,9 +3751,9 @@
                                                           "target":  {
                                                                          "cell":  "27ca9e3e-457a-4667-a2c2-63e190f4d225"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  14,
                                                           "labels":  [
                                                                          {
@@ -3803,7 +3803,7 @@
                                                                                            "mitigation":  "Auto session timeout, biometric/app-lock, conditional access based on device posture.",
                                                                                            "title":  "Unauthorised family access",
                                                                                            "type":  "Spoofing",
-                                                                                           "description":  "A shared personal device may allow a family member to view a logged-in student\u0027s results/transcript.",
+                                                                                           "description":  "A shared personal device may allow a family member to view a logged-in student's results/transcript.",
                                                                                            "status":  "Open",
                                                                                            "severity":  "Medium",
                                                                                            "modelType":  "STRIDE"
@@ -3832,9 +3832,9 @@
                                                           "target":  {
                                                                          "cell":  "27ca9e3e-457a-4667-a2c2-63e190f4d225"
                                                                      },
-                                                          "vertices":  {
+                                                          "vertices":  [
 
-                                                                       },
+                                                                       ],
                                                           "zIndex":  15,
                                                           "labels":  [
                                                                          {
