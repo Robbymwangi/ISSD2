@@ -1,0 +1,1625 @@
+{
+  "summary": {
+    "title": "Student Results Portal - Threat Model",
+    "owner": "Robby (System Architecture & DFD)",
+    "description": "ICS4203 Threat Modelling Lab - University Student Results Portal. Baseline architecture plus the remote-learning extension scenario, with STRIDE threats mapped from the group's completed STRIDE table.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Robby"
+      },
+      {
+        "name": "Austin"
+      },
+      {
+        "name": "Bhavin"
+      },
+      {
+        "name": "Samuel"
+      },
+      {
+        "name": "Philip"
+      },
+      {
+        "name": "Hope"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Baseline - Student Results Portal",
+        "diagramType": "STRIDE",
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 40
+              },
+              "angle": 0,
+              "id": "505ceec0-5aa1-40e4-b0ea-0eddc920701b",
+              "z": 1,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Stolen student credentials",
+                  "type": "Spoofing",
+                  "description": "Attacker steals a student's login details and impersonates them to view results/transcripts.",
+                  "mitigation": "MFA, strong password policy, suspicious login detection."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Student"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 200
+              },
+              "angle": 0,
+              "id": "677180d9-de86-4814-91f5-2d77c5faebf3",
+              "z": 2,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Stolen lecturer credentials",
+                  "type": "Spoofing",
+                  "description": "Attacker obtains a lecturer's credentials by theft and logs in under the disguise of being a lecturer.",
+                  "mitigation": "MFA, session management and login auditing."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Lecturer"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 360
+              },
+              "angle": 0,
+              "id": "e451f954-498a-4420-9c12-65f8ed9b0955",
+              "z": 3,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Administrator"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 300,
+                "y": 70
+              },
+              "angle": 0,
+              "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2",
+              "z": 4,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Portal flooding",
+                  "type": "Denial of service",
+                  "description": "Attacker floods the portal with excessive requests, exhausting server resources.",
+                  "mitigation": "IP rate limiting, request throttling, traffic monitoring, DDoS protection."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Web\nApplication"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 520,
+                "y": 190
+              },
+              "angle": 0,
+              "id": "ed5c5934-3826-451b-bf58-7967968c8b12",
+              "z": 5,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Application\nServer"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 300,
+                "y": 340
+              },
+              "angle": 0,
+              "id": "b63f6d39-32c7-4a87-b78f-7669caa831da",
+              "z": 6,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Authentication flooding",
+                  "type": "Denial of service",
+                  "description": "Attacker sends excessive authentication requests, exhausting identity-server resources or locking out legitimate users.",
+                  "mitigation": "Bot login protection, anomaly monitoring, resilient authentication services."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Identity\nServer"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 520,
+                "y": 380
+              },
+              "angle": 0,
+              "id": "61a850c7-2963-4c5a-8769-cbc69e3a315c",
+              "z": 7,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Critical",
+                  "title": "Privilege escalation to admin",
+                  "type": "Elevation of privilege",
+                  "description": "A student or lecturer exploits weak authorization to obtain administrator privileges.",
+                  "mitigation": "Strict RBAC, least privilege, deny-by-default authorization, server-side permission checks."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Authorisation /\nRBAC Enforcement"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 760,
+                "y": 110
+              },
+              "angle": 0,
+              "id": "3c24f416-513e-453d-8e67-8e82ad95785a",
+              "z": 8,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Critical",
+                  "title": "Unauthorised score modification",
+                  "type": "Tampering",
+                  "description": "Attacker alters examination scores stored in the Results DB without authorisation.",
+                  "mitigation": "RBAC, database permissions, integrity checks, audit logs."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Critical",
+                  "title": "Bulk Results DB exposure",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to the Results DB exposes large numbers of student records.",
+                  "mitigation": "Database encryption, least-privilege permissions, network restrictions, monitoring."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Results DB"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 760,
+                "y": 320
+              },
+              "angle": 0,
+              "id": "23f9962d-4720-4635-bbc3-321c3874b4a4",
+              "z": 9,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Lecturer denies mark change",
+                  "type": "Repudiation",
+                  "description": "Lecturer modifies a result then denies the action; system cannot reliably prove who made the change.",
+                  "mitigation": "Tamper-resistant audit logging recording user identity, action, timestamp and affected record."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Audit Log Store"
+                },
+                ".undefined": {
+                  "class": "hasOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 220,
+                "y": 20
+              },
+              "target": {
+                "x": 220,
+                "y": 460
+              },
+              "vertices": [],
+              "id": "4b6dc2c8-bf99-49cf-b890-48d1905cf750",
+              "z": 10,
+              "attrs": {
+                "text": {
+                  "text": "TB1 Internet"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 470,
+                "y": 20
+              },
+              "target": {
+                "x": 470,
+                "y": 200
+              },
+              "vertices": [],
+              "id": "d9c6cb54-0268-474a-93ba-88aa9b20203a",
+              "z": 11,
+              "attrs": {
+                "text": {
+                  "text": "TB2 DMZ / Web Tier"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 260,
+                "y": 300
+              },
+              "target": {
+                "x": 470,
+                "y": 460
+              },
+              "vertices": [],
+              "id": "bce36619-f77e-453c-81ca-39108a1ecb19",
+              "z": 12,
+              "attrs": {
+                "text": {
+                  "text": "TB3 Identity Domain"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 680,
+                "y": 20
+              },
+              "target": {
+                "x": 680,
+                "y": 200
+              },
+              "vertices": [],
+              "id": "d454f6d1-6054-4af4-aab9-c373cb8fb3be",
+              "z": 13,
+              "attrs": {
+                "text": {
+                  "text": "TB4 Internal Application"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 470,
+                "y": 340
+              },
+              "target": {
+                "x": 680,
+                "y": 500
+              },
+              "vertices": [],
+              "id": "9747d554-2d4c-4625-8983-5c7895fc9971",
+              "z": 14,
+              "attrs": {
+                "text": {
+                  "text": "TB5 Role Privilege Boundary"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 720,
+                "y": 20
+              },
+              "target": {
+                "x": 720,
+                "y": 460
+              },
+              "vertices": [],
+              "id": "4b602900-c291-4cb5-aec4-cec38c2ccaec",
+              "z": 15,
+              "attrs": {
+                "text": {
+                  "text": "TB6 Protected Data Zone"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "505ceec0-5aa1-40e4-b0ea-0eddc920701b"
+              },
+              "target": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "vertices": [],
+              "id": "401cf22b-15ea-4dd3-869b-0f0c0262ba12",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Student login / view results request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "In-transit data tampering",
+                  "type": "Tampering",
+                  "description": "Attacker intercepts network traffic between browser and server and alters marks/data in transit.",
+                  "mitigation": "HTTPS/TLS, certificate validation, secure API communication."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "target": {
+                "id": "505ceec0-5aa1-40e4-b0ea-0eddc920701b"
+              },
+              "vertices": [],
+              "id": "9f6f6302-80de-4328-8d59-6436cf34bd0f",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Results / transcript response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Unauthorized transcript access",
+                  "type": "Information disclosure",
+                  "description": "Attacker accesses another student's results/transcript in an unauthorized manner.",
+                  "mitigation": "RBAC, encryption in transit and at rest, server-side access checks."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "677180d9-de86-4814-91f5-2d77c5faebf3"
+              },
+              "target": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "vertices": [],
+              "id": "ef28ee6e-fe2b-4256-bd5b-6ff2381fac08",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Lecturer login / mark upload request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 18,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "target": {
+                "id": "677180d9-de86-4814-91f5-2d77c5faebf3"
+              },
+              "vertices": [],
+              "id": "441ff254-0208-4f8a-8e91-c8ca43bef18c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Mark upload confirmation",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 19,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "e451f954-498a-4420-9c12-65f8ed9b0955"
+              },
+              "target": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "vertices": [],
+              "id": "77a1baf4-87a4-4aaa-a8a6-08ec9984bd59",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Admin login / account mgmt request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ddc537d4-6dd2-4ff9-8dfc-190ab37634c2"
+              },
+              "target": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "vertices": [],
+              "id": "cde2e0c5-7ad2-4eb9-9803-2360964367e0",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Authenticated request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 21,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "target": {
+                "id": "b63f6d39-32c7-4a87-b78f-7669caa831da"
+              },
+              "vertices": [],
+              "id": "4889a86c-5724-4ae3-8a9b-9743e1822255",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Identity / token verification",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 22,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "b63f6d39-32c7-4a87-b78f-7669caa831da"
+              },
+              "target": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "vertices": [],
+              "id": "1b3dfbeb-34b1-4d2f-aa4d-f0b9e051aafe",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Auth token / claims",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 23,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "target": {
+                "id": "61a850c7-2963-4c5a-8769-cbc69e3a315c"
+              },
+              "vertices": [],
+              "id": "a7167dbb-7f23-43d6-902c-01b0eceda956",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Authorization check",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 24,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Critical",
+                  "title": "Student accesses lecturer functions",
+                  "type": "Elevation of privilege",
+                  "description": "Student manipulates a request to gain permission to upload or modify marks.",
+                  "mitigation": "Server-side authorization, RBAC, endpoint-level access control, least privilege."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "61a850c7-2963-4c5a-8769-cbc69e3a315c"
+              },
+              "target": {
+                "id": "3c24f416-513e-453d-8e67-8e82ad95785a"
+              },
+              "vertices": [],
+              "id": "33be2884-2fb4-4f49-ad05-ff3e494f5d20",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Authorized read/write marks",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 25,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "3c24f416-513e-453d-8e67-8e82ad95785a"
+              },
+              "target": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "vertices": [],
+              "id": "f1ffccc7-7eb0-4e55-aea7-c4a114872510",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Results data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 26,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ed5c5934-3826-451b-bf58-7967968c8b12"
+              },
+              "target": {
+                "id": "23f9962d-4720-4635-bbc3-321c3874b4a4"
+              },
+              "vertices": [],
+              "id": "e85b8d78-0fc2-4e4c-9e24-7431e544f5ed",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Write audit event",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 27,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 620,
+          "width": 960
+        }
+      },
+      {
+        "title": "Remote Learning Scenario",
+        "diagramType": "STRIDE",
+        "id": 1,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 40
+              },
+              "angle": 0,
+              "id": "657610d6-d470-41a7-aeb4-0cf04ca57125",
+              "z": 1,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Lecturer Laptop\n(personal, home)"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 200
+              },
+              "angle": 0,
+              "id": "40e25081-d7f3-4e11-9b61-5a8968c2a8ac",
+              "z": 2,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Student Smartphone\n(personal)"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 300,
+                "y": 120
+              },
+              "angle": 0,
+              "id": "b96c2d16-0764-4b79-b045-c99226a68447",
+              "z": 3,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Remote Access\nGateway (ZTNA/VPN)"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 540,
+                "y": 120
+              },
+              "angle": 0,
+              "id": "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48",
+              "z": 4,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Web\nApplication"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 40,
+                "y": 360
+              },
+              "angle": 0,
+              "id": "27ca9e3e-457a-4667-a2c2-63e190f4d225",
+              "z": 5,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Local Device\nStorage/Cache"
+                },
+                ".undefined": {
+                  "class": "hasNoOpenThreats isInScope"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 220,
+                "y": 20
+              },
+              "target": {
+                "x": 220,
+                "y": 460
+              },
+              "vertices": [],
+              "id": "722f73e2-f652-42c5-8c18-fb689e2718fc",
+              "z": 6,
+              "attrs": {
+                "text": {
+                  "text": "TB0 Unmanaged Device / Home Network Zone"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 470,
+                "y": 20
+              },
+              "target": {
+                "x": 470,
+                "y": 300
+              },
+              "vertices": [],
+              "id": "6a7cc5fc-e703-4248-b009-1d80149c5e80",
+              "z": 7,
+              "attrs": {
+                "text": {
+                  "text": "TB1 Internet"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "657610d6-d470-41a7-aeb4-0cf04ca57125"
+              },
+              "target": {
+                "id": "b96c2d16-0764-4b79-b045-c99226a68447"
+              },
+              "vertices": [],
+              "id": "aa96fb0f-0bab-46ee-b058-376dadcf1397",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Lecturer VPN/ZTNA connection request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Stolen laptop",
+                  "type": "Spoofing",
+                  "description": "Lecturer's personal laptop is lost or stolen, exposing cached credentials/session tokens.",
+                  "mitigation": "Full-disk encryption, MDM, remote wipe, short-lived tokens."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "b96c2d16-0764-4b79-b045-c99226a68447"
+              },
+              "target": {
+                "id": "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
+              },
+              "vertices": [],
+              "id": "52361170-dda1-46ec-86e3-410955fa4f3f",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Forwarded authenticated session",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "40e25081-d7f3-4e11-9b61-5a8968c2a8ac"
+              },
+              "target": {
+                "id": "b96c2d16-0764-4b79-b045-c99226a68447"
+              },
+              "vertices": [],
+              "id": "e6f9606e-89f7-47e6-8dbe-296bdd5fed38",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Student remote access request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Insecure home network",
+                  "type": "Information disclosure",
+                  "description": "Traffic from a student's home Wi-Fi/mobile network may traverse an untrusted or compromised network.",
+                  "mitigation": "Enforce TLS end-to-end, discourage public Wi-Fi, VPN/ZTNA for sensitive actions."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "b96c2d16-0764-4b79-b045-c99226a68447"
+              },
+              "target": {
+                "id": "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
+              },
+              "vertices": [],
+              "id": "c7148fa2-e149-4733-a812-fcb5e5e244be",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Forwarded student session",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
+              },
+              "target": {
+                "id": "657610d6-d470-41a7-aeb4-0cf04ca57125"
+              },
+              "vertices": [],
+              "id": "82093bd0-ac53-45b8-abb6-3b9450bc9cd3",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Portal content to lecturer laptop",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "7e0cbeb1-8a1b-4c08-af3b-d4c77f750b48"
+              },
+              "target": {
+                "id": "40e25081-d7f3-4e11-9b61-5a8968c2a8ac"
+              },
+              "vertices": [],
+              "id": "97d1e005-c24f-406a-a382-b3fdc3901549",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Portal content to student device",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "threats": [],
+              "outOfScope": false,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "657610d6-d470-41a7-aeb4-0cf04ca57125"
+              },
+              "target": {
+                "id": "27ca9e3e-457a-4667-a2c2-63e190f4d225"
+              },
+              "vertices": [],
+              "id": "2a5927f5-52d4-472f-afbf-b4139ef5ee54",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Local caching of downloaded marks/reports",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Unmanaged local data storage",
+                  "type": "Information disclosure",
+                  "description": "Marks or reports cached/downloaded to a personal laptop persist outside institutional control.",
+                  "mitigation": "MDM with data-loss prevention, disable local downloads for sensitive reports, encryption at rest."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "40e25081-d7f3-4e11-9b61-5a8968c2a8ac"
+              },
+              "target": {
+                "id": "27ca9e3e-457a-4667-a2c2-63e190f4d225"
+              },
+              "vertices": [],
+              "id": "7f01e661-f10d-4d84-9c98-c6c21a0eb282",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Local caching of transcripts on device",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Unauthorised family access",
+                  "type": "Spoofing",
+                  "description": "A shared personal device may allow a family member to view a logged-in student's results/transcript.",
+                  "mitigation": "Auto session timeout, biometric/app-lock, conditional access based on device posture."
+                }
+              ],
+              "outOfScope": false,
+              "hasOpenThreats": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 500,
+          "width": 800
+        }
+      }
+    ],
+    "reviewer": ""
+  }
+}
